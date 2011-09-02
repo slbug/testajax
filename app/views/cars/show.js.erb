@@ -1,0 +1,6 @@
+var data = <%= {
+  :tpl => render(:file => 'cars/show.html.erb')
+}.to_json.html_safe %>;
+
+$('#main').html(data.tpl);
+
